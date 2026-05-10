@@ -1,0 +1,24 @@
+Traceback (most recent call last):
+  File "C:\Users\joshu\MPLABXProjects\ECE118\ds30Wrapper\ece118\UsbSerial\__init__.py", line 80, in Connect
+    self.serialPort = serial.Serial()
+                      ^^^^^^^^^^^^^
+AttributeError: module 'serial' has no attribute 'Serial'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\joshu\MPLABXProjects\ECE118\ds30Wrapper\ds30wrapper.py", line 198, in <module>
+    sys.exit(main())
+             ^^^^^^
+  File "C:\Users\joshu\MPLABXProjects\ECE118\ds30Wrapper\ds30wrapper.py", line 192, in main
+    gui = MainInterface()
+          ^^^^^^^^^^^^^^^
+  File "C:\Users\joshu\MPLABXProjects\ECE118\ds30Wrapper\ds30wrapper.py", line 41, in __init__
+    self.portInstance = UsbSerial.UsbSerial()
+                        ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\joshu\MPLABXProjects\ECE118\ds30Wrapper\ece118\UsbSerial\__init__.py", line 41, in __init__
+    self.Connect()
+  File "C:\Users\joshu\MPLABXProjects\ECE118\ds30Wrapper\ece118\UsbSerial\__init__.py", line 87, in Connect
+    except serial.serialutil.SerialException:
+           ^^^^^^^^^^^^^^^^^
+AttributeError: module 'serial' has no attribute 'serialutil'
