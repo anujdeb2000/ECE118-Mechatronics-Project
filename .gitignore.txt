@@ -1,0 +1,7 @@
+# MPLAB X generated files to ignore
+**/dist/
+**/build/
+**/nbproject/private/
+**/nbproject/Makefile-*
+**/nbproject/Package-*
+.dep/
